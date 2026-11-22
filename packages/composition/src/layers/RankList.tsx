@@ -1,7 +1,7 @@
 import React from "react";
 import { useCurrentFrame, useVideoConfig } from "remotion";
 import type { Clip, RankingProject } from "../schema.js";
-import { resolveFontFamily } from "../fonts.js";
+import { resolveFontFamily } from "../fontList.js";
 import { getTextAnimation } from "../animations.js";
 
 export interface RankListProps {

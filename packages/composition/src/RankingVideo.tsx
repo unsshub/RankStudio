@@ -8,7 +8,6 @@ import { getTransitionPresentation } from "./transitions.js";
 import { TitleLayer } from "./layers/TitleLayer.js";
 import { RankList } from "./layers/RankList.js";
 import { ClipSequence, type ClipMediaUrls } from "./layers/ClipSequence.js";
-import "./fonts.js";
 
 export interface RankingVideoProps {
   project: RankingProject;

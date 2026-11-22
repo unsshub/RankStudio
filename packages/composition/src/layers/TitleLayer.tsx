@@ -1,7 +1,7 @@
 import React from "react";
 import type { RankingProject } from "../schema.js";
 import { tiptapToSpans } from "../logic/tiptapToSpans.js";
-import { resolveFontFamily } from "../fonts.js";
+import { resolveFontFamily } from "../fontList.js";
 
 export interface TitleLayerProps {
   title: RankingProject["title"];

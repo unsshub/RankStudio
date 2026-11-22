@@ -3,7 +3,7 @@ export * from "./logic/order.js";
 export * from "./logic/duration.js";
 export * from "./logic/tiptapToSpans.js";
 export * from "./logic/captions.js";
-export * from "./fonts.js";
+export * from "./fontList.js";
 export * from "./animations.js";
 export * from "./transitions.js";
 export * from "./RankingVideo.js";

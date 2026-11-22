@@ -3,6 +3,7 @@ import { Composition, registerRoot } from "remotion";
 import { RankingVideo, type RankingVideoProps } from "./RankingVideo.js";
 import { defaultProject } from "./schema.js";
 import { computeDurationFrames, COMPOSITION_FPS } from "./logic/duration.js";
+import "./fonts.js";
 
 const RemotionRoot: React.FC = () => {
   return (
