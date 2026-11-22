@@ -15,7 +15,10 @@ export const GeneralSettings: React.FC = () => {
           <div className="flex justify-between">
             <span>Video Height</span>
             <span className="text-zinc-200 font-medium">
-              {project.general.videoHeightPct}%
+              {project.general.videoHeightPct}%{" "}
+              <span className="text-zinc-500">
+                (bar {100 - project.general.videoHeightPct}%)
+              </span>
             </span>
           </div>
           <input

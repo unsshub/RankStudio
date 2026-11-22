@@ -35,7 +35,7 @@ export const NumberDrag: React.FC = () => {
         </button>
       </div>
 
-      <div className="grid grid-cols-3 gap-3 text-xs text-zinc-400">
+      <div className="grid grid-cols-2 gap-3 text-xs text-zinc-400 sm:grid-cols-4">
         <label className="space-y-1">
           <span>X: {project.numbers.x}%</span>
           <input
@@ -80,6 +80,23 @@ export const NumberDrag: React.FC = () => {
               updateProject((prev) => ({
                 ...prev,
                 numbers: { ...prev.numbers, scale: Number(e.target.value) },
+              }))
+            }
+            className="w-full accent-[#7C5CFF]"
+          />
+        </label>
+        <label className="space-y-1">
+          <span>Spacing: {project.numbers.gap}px</span>
+          <input
+            type="range"
+            min={0}
+            max={160}
+            step={2}
+            value={project.numbers.gap}
+            onChange={(e) =>
+              updateProject((prev) => ({
+                ...prev,
+                numbers: { ...prev.numbers, gap: Number(e.target.value) },
               }))
             }
             className="w-full accent-[#7C5CFF]"

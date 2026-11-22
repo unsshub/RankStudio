@@ -16,7 +16,9 @@ describe("Composition public contract", () => {
       const project = defaultProject();
       const parsed = RankingProject.parse(project);
       expect(parsed.version).toBe(1);
-      expect(parsed.general.videoHeightPct).toBe(80);
+      expect(parsed.general.videoHeightPct).toBe(88);
+      expect(parsed.title.position.y).toBe(2.5);
+      expect(parsed.numbers.gap).toBe(28);
       expect(parsed.general.background).toBe("#2B2A2A");
       expect(parsed.general.captions).toBe(false);
       expect(parsed.clips.length).toBeGreaterThanOrEqual(1);
@@ -30,6 +32,7 @@ describe("Composition public contract", () => {
       const migrated = migrate(raw);
       expect(migrated.version).toBe(1);
       expect(migrated.general.background).toBe("#2B2A2A");
+      expect(migrated.numbers.gap).toBe(28);
       expect(migrated.clips).toHaveLength(1);
     });
   });

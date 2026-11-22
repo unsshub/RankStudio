@@ -21,7 +21,7 @@ export const TitleLayer: React.FC<TitleLayerProps> = ({ title }) => {
         textAlign: title.align,
         zIndex: 30,
         pointerEvents: "none",
-        lineHeight: 1.15,
+        lineHeight: 1.1,
       }}
     >
       {lines.map((line, lineIdx) => (
