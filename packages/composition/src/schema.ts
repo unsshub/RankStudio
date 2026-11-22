@@ -104,13 +104,13 @@ export const RankingProject = z.object({
     align: z.enum(["left", "center", "right"]).default("center"),
     position: z.object({
       x: z.number().default(50),
-      y: z.number().default(8),
+      y: z.number().default(2.5),
     }),
     strokeColor: z.string().default("#000000"),
     strokeWidth: z.number().min(0).max(20).default(4),
   }),
   general: z.object({
-    videoHeightPct: z.number().min(30).max(100).default(80),
+    videoHeightPct: z.number().min(30).max(100).default(88),
     background: z.string().default("#2B2A2A"),
     captions: z.boolean().default(false),
   }),
@@ -123,8 +123,9 @@ export const RankingProject = z.object({
   numbers: z.object({
     dragEnabled: z.boolean().default(false),
     x: z.number().default(6),
-    y: z.number().default(24),
+    y: z.number().default(18),
     scale: z.number().min(0.3).max(3).default(1),
+    gap: z.number().min(0).max(200).default(28),
   }),
   clips: z.array(Clip).min(1),
 });
@@ -221,12 +222,12 @@ export function defaultProject(): RankingProject {
     title: {
       doc: defaultTitleDoc(),
       align: "center",
-      position: { x: 50, y: 8 },
+      position: { x: 50, y: 2.5 },
       strokeColor: "#000000",
       strokeWidth: 4,
     },
     general: {
-      videoHeightPct: 80,
+      videoHeightPct: 88,
       background: "#2B2A2A",
       captions: false,
     },
@@ -239,8 +240,9 @@ export function defaultProject(): RankingProject {
     numbers: {
       dragEnabled: false,
       x: 6,
-      y: 24,
+      y: 18,
       scale: 1,
+      gap: 28,
     },
     clips,
   });

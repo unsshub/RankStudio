@@ -25,7 +25,7 @@ export const RankList: React.FC<RankListProps> = ({ project, clipStartFrames }) 
         zIndex: 25,
         display: "flex",
         flexDirection: "column",
-        gap: "14px",
+        gap: `${project.numbers.gap}px`,
         pointerEvents: "none",
       }}
     >
