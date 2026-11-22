@@ -1,0 +1,61 @@
+{
+  "name": "@rankstudio/composition",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./fonts": {
+      "types": "./dist/fonts.d.ts",
+      "default": "./dist/fonts.js"
+    },
+    "./root": {
+      "types": "./dist/Root.d.ts",
+      "default": "./dist/Root.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -b"
+  },
+  "dependencies": {
+    "@fontsource/abeezee": "^5.1.0",
+    "@fontsource/abril-fatface": "^5.1.0",
+    "@fontsource/anton": "^5.1.0",
+    "@fontsource/archivo-black": "^5.1.0",
+    "@fontsource/bangers": "^5.1.0",
+    "@fontsource/barlow-condensed": "^5.1.0",
+    "@fontsource/bebas-neue": "^5.1.0",
+    "@fontsource/black-ops-one": "^5.1.0",
+    "@fontsource/bungee": "^5.1.0",
+    "@fontsource/fredoka": "^5.1.0",
+    "@fontsource/inter": "^5.1.0",
+    "@fontsource/kanit": "^5.1.0",
+    "@fontsource/lobster": "^5.1.0",
+    "@fontsource/luckiest-guy": "^5.1.0",
+    "@fontsource/montserrat": "^5.1.0",
+    "@fontsource/oswald": "^5.1.0",
+    "@fontsource/pacifico": "^5.1.0",
+    "@fontsource/permanent-marker": "^5.1.0",
+    "@fontsource/playfair-display": "^5.1.0",
+    "@fontsource/poppins": "^5.1.0",
+    "@fontsource/righteous": "^5.1.0",
+    "@fontsource/roboto": "^5.1.0",
+    "@fontsource/rubik": "^5.1.0",
+    "@fontsource/russo-one": "^5.1.0",
+    "@fontsource/teko": "^5.1.0",
+    "@remotion/transitions": "4.0.545",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "remotion": "4.0.545",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3"
+  }
+}

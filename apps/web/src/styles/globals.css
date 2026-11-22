@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+:root {
+  --rs-bg: #0e0e10;
+  --rs-panel: #17171b;
+  --rs-panel-alt: #1f1f25;
+  --rs-border: #2a2a32;
+  --rs-accent: #7c5cff;
+  --rs-accent-hover: #6c49f5;
+  --rs-text: #f4f4f5;
+  --rs-muted: #a1a1aa;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  background-color: var(--rs-bg);
+  color: var(--rs-text);
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+/* Tiptap editor basics */
+.ProseMirror {
+  outline: none;
+  min-height: 76px;
+}
+
+.ProseMirror p {
+  margin: 0.15rem 0;
+}
+
+/* Custom subtle scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0e0e10;
+}
+::-webkit-scrollbar-thumb {
+  background: #2e2e38;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f4c;
+}

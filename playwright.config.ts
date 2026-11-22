@@ -1,0 +1,11 @@
+import { defineConfig } from "@playwright/test";
+
+export default defineConfig({
+  testDir: "./e2e",
+  timeout: 180000,
+  retries: 0,
+  use: {
+    headless: true,
+    viewport: { width: 1440, height: 900 },
+  },
+});
